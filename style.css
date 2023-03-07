@@ -453,6 +453,7 @@ opacity: 1;
   display: flex;
   align-items: center;
 justify-content: center;
+cursor: zoom-out;
 
 
 }
@@ -464,6 +465,9 @@ justify-content: center;
   height: auto;
   max-width: 80%;
   padding: 40px 0;
+  background-color: red;
+  /* cursor: auto; */
+
 
    
 
@@ -471,6 +475,7 @@ justify-content: center;
 
 .lightbox .img-box{
   position: relative;
+  cursor: auto;
 
 }
 
@@ -496,4 +501,50 @@ justify-content: center;
   height: 30px;
   width: 30px;
   background-color: blue;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  cursor: zoom-out;
+
+}
+
+.lightbox .lightbox-controls .prev,
+.lightbox .lightbox-controls .next{
+  position: absolute;
+  height: calc(100% - 80px);
+  top: 40px;
+  /* background-color: blue; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+}
+
+.lightbox .lightbox-controls .prev{
+left: 0;
+width: 50%;
+justify-content: flex-start;
+padding-left: 5px;
+
+}
+
+.lightbox .lightbox-controls .next{
+right: 0;
+width: 50%;
+justify-content: flex-end;
+padding-right: 5px;
+
+}
+.lightbox .lightbox-controls .prev img,
+.lightbox .lightbox-controls .next img{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(247, 246, 246, 0.924);
+  padding: 10px;
+  border-radius: 50px;
 }
